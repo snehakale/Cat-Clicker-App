@@ -1,6 +1,7 @@
 $(function(){
   // Model
   var model = {
+      // currentCat variable and list of cats and related data
       currentCat : null,
       cats : [
         {
@@ -38,23 +39,27 @@ $(function(){
 
   // Octopus
   var octopus = {
+      // function to initialize data
       init : function(){
         model.currentCat = model.cats[0];
         catListView.render();
         catView.init();
       },
+      // function to set currentCat value
       setCurrentCat : function(cat){
         model.currentCat = cat;
       },
+      // function to get the currentCat value
       getCurrentCat : function(){
         return model.currentCat;
       },
+      // function to list all the cats
       getAllCats : function(){
         return model.cats;
       },
+      // function to increment counter for a clicked cat
       addClickCount : function(){
         model.currentCat.count++;
-        //alert("Add click count");
         catView.render();
       }
   };
@@ -110,5 +115,4 @@ $(function(){
 
   // start
   octopus.init();
-
 });

@@ -1,0 +1,57 @@
+/* Rules for whole page */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #ecf7a5;
+}
+
+/* Rules for main container and both the divisions */
+.flex-parent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.flex-child {
+    flex: auto;
+}
+
+.list-div-style {
+    width: 40%;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.display-div-style {
+    width: 60%;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.cat-list-style {
+    font-style: oblique;
+    font-weight: bold;
+    font-stretch: expanded;
+    text-decoration: underline;
+    color: #4d79ff;
+}
+
+h2,
+h3 {
+    font-style: italic;
+    font-weight: bold;
+    color: #4d79ff;
+}
+
+.cat-image-style {
+    border: 5px solid #13182d;
+}

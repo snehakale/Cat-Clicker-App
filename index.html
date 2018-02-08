@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Cat Clicker</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <form id="form-container">
-        <div id="cat-list-div">
-            <ul id="cat-list"></ul>
+    <form id="form-container" class="flex-parent">
+        <div id="cat-list-div" class="flex-child list-div-style">
+            <h2>Click on the cat name to view the photo..</h2>
+            <ul id="cat-list" class="cat-list-style"></ul>
         </div>
-        <div id="cat-display-div">
+        <div id="cat-display-div" class="flex-child display-div-style">
+            <h2>Click on the cat image to get the clicks count..</h2>
             <h2 id="cat-name"></h2>
             <h3 id="cat-count"></h3>
-            <img id="cat-image" />
+            <img id="cat-image" class="cat-image-style" height="300"
+              width="300" alt="Cat Image"/>
         </div>
     </form>
     <script src="js/libs/jquery.min.js"></script>
